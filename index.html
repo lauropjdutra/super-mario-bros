@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>The Super Mario Bros.</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Logo do Super Mario">
+        <p class="p1">Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!</p>
+        <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+        <div class="buttons">
+          <button class="watch-btn" onclick="displayVideo()">ASSISTIR</button>
+          <button onclick="displayForm()">CONTATO</button>
+        </div>
+      </div>
+      <div class="bros">
+        <img src="./assets/mario.png" alt="Mario & Luigi">
+      </div>
+      <div id="form-container">
+        <img onclick="hideVideo();disable()" src="./assets/close.png" alt="Botão de Fechar" class="close-btn2">
+        <iframe class="video" src="https://www.youtube.com/embed/0mqnkKgLT64?si=yH6ZcysmYLadCrMi" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay muted></iframe>
+        <img onclick="hideForm()" class="close-btn" src="./assets/close.png" alt="Botão de Fechar">
+        <form class="contact" action="https://formsubmit.co/laurojorge9@gmail.com" method="POST">
+          <h2>Fale Conosco</h2>
+          <input type="text" id="name" placeholder="Nome completo" name="name" required autofocus autocomplete="off">        
+          <input type="tel" id="tel" placeholder="DDD + Telefone" name="tel" required minlength="10" inputmode="numeric" autocomplete="off">
+          <textarea name="problem" id="problem" name="issue" placeholder="Como podemos ajudar?" required minlength="10"></textarea>
+          <button type="submit" onclick="onFormSubmit(e)">Enviar formulário</button>
+        </form>
+      </div>
+      <div class="gradient-form"></div>
+      <div class="box-vid">
+        <div class="gradient"></div>
+        <video src="./assets/video.mp4" autoplay muted loop></video>
+      </div>
+    </div>
+    <footer>
+      <h3>Copyright &copy; 2023 - Desenvolvido por Lauro Dutra</h3>
+    </footer>
+  </body>
+  <script>
+    let closeForm = document.querySelector(".close-btn")
+    let closeVideo = document.querySelector(".close-btn2")
+    let form = document.querySelector(".contact")
+    let gradient = document.querySelector(".gradient-form")
+    let video = document.querySelector(".video")
+    function displayForm() {
+      closeForm.style.display = "block"
+      form.style.display = "flex"
+      gradient.style.display = "block"
+    }
+    function hideForm() {
+      closeForm.style.display = "none"
+      form.style.display = "none"
+      gradient.style.display = "none"
+    }
+    function displayVideo() {
+      closeVideo.style.display = "block"
+      video.style.display = "block"
+      gradient.style.display = "block"
+    }
+    function hideVideo() {
+      closeVideo.style.display = "none"
+      video.style.display = "none"
+      gradient.style.display = "none"
+    }
+  </script>
+</html>

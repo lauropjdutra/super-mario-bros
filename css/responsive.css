@@ -1,0 +1,85 @@
+@media only screen and (min-width: 300px) and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .logo {
+    text-align: center;
+    width: 80vw;
+  }
+
+  .logo img {
+    width: 30vh;
+  }
+
+  .bros img {
+    margin-top: 30px;
+    height: 70vw;
+  }
+
+  .box-vid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gradient {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+  }
+
+  video {
+    position: fixed;
+    z-index: -1;
+    min-width: 105%;
+    min-height: 105%;
+  }
+
+  p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .p1 {
+    margin: 30px 0 0 0;
+  }
+
+  #form-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .video {
+    width: 100%;
+    height: 50%;
+  }
+
+  .close-btn2 {
+    display: none;
+    width: 25px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 6;
+  }
+}

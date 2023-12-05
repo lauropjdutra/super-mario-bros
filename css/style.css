@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap');
+
+* {
+  font-family: "Mukta";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo {
+  width: 40%;
+}
+
+.logo img {
+  width: 250px;
+}
+
+.bros img {
+  height: 500px;
+}
+
+.box-vid {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.gradient {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+video {
+  position: fixed;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 101%;
+}
+
+p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.p1 {
+  margin: 20px 0 0 0;
+}
+
+button {
+  padding: 1.5px 0 0 30px;
+  height: 45px;
+  width: 150px;
+  background: #c51111 url(../assets/phone.png);
+  background-position: 20px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px #1a1a1a;
+  z-index: 3;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #a10000 url(../assets/phone.png);
+  background-position: 20px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+}
+
+.close-btn {
+  display: none;
+  width: 25px;
+  margin-left: 315px;
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 6;
+}
+
+.watch-btn {
+  width: 155px;
+  background: #fefefe url(../assets/play.png);
+  background-position: 26px;
+  background-repeat: no-repeat;
+  background-size: 23px;
+  color: #000000;
+  box-shadow: 0px 0px 10px #1a1a1a;
+  transition: 0.2s;
+  z-index: 4;
+}
+
+.watch-btn:hover {
+  background: #e6e6e6 url(../assets/play.png);
+  background-position: 26px;
+  background-repeat: no-repeat;
+  background-size: 23px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 7px;
+}
+
+.close-btn2 {
+  display: none;
+  width: 25px;
+  margin-left: 980px;
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 6;
+}
+
+.video {
+  display: none;
+  width: calc(1920px / 2);
+  height: calc(1080px / 2);
+  border-radius: 20px;
+  z-index: 6;
+}
+
+.contact {
+  display: none;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 20px;
+  gap: 15px;
+  position: relative;
+  top: 0;
+  border-radius: 10px;
+  transition: 0.5s;
+  z-index: 6;
+  box-shadow: 0px 0px 10px #000000;
+}
+
+.contact button {
+  width: 170px;
+  background: #18a331;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  box-shadow: none;
+}
+
+.contact button:hover {
+  background: #068528;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+input {
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid #888888;
+  padding-left: 10px;
+  outline-color: #20b43b;
+}
+
+input::placeholder, textarea::placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2222229c;
+}
+
+textarea {
+  height: 100px;
+  width: 250px;
+  border-radius: 7px;
+  border: 1px solid #888888;
+  padding: 10px;
+  outline-color: #20b43b;
+}
+
+.gradient-form {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(109deg, rgba(10, 12, 16, 1) 15%, rgba(10, 12, 16, 0.9) 50%, rgba(10, 12, 16, 1) 85%);
+  display: none;
+  z-index: 5;
+}
+
+footer {
+  background: #a10000;
+  padding: 20px;
+}
+
+h3 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+}
